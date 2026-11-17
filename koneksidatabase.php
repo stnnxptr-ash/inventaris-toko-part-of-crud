@@ -8,12 +8,12 @@ $password = "";
 
 try {
 
-$koneksi = new PDO("mysql:host=$host;db_name=$db_name" , $username, $password);
+$koneksi = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
 
-$koneksi-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$koneksi->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-echo "YEYY KONEKSI KAMU BERHASIL STENYY!!!`";
+//echo "YEYY KONEKSI KAMU BERHASIL STENYY!!!`";
 
 } catch (PDOException $e) {
-    die("koneksi gagal :" . $e->getMessage());
+    echo "koneksi gagal :" . $e->getMessage();
 }

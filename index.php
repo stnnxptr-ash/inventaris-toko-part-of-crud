@@ -97,7 +97,7 @@
     <div class="container">
     <h2> FORM PENGISIAN INVENTARIS TOKO </h2>
 <div class="form">
-   <form method="$_POST" action="proses.php" name="form_inventaris_toko">
+   <form method="post" action="proses.php" name="form_inventaris_toko">
 
         <div class="form-group">
         <label for="namabarang">Nama Barang</label>
@@ -111,7 +111,7 @@
 
         <div class="form-group">
             <label for="stokbarang">Stok Barang</label>
-            <input type="number" id="stokbarang" name="Stok_barang" placeholder="Masukkan stok barangnya ya!!" require> 
+            <input type="number" id="stokbarang" name="stok_barang" placeholder="Masukkan stok barangnya ya!!" require> 
         </div>
 
         <button type="submit">Daftar</button>
